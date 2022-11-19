@@ -20,3 +20,8 @@ repos:
       - id: check-symlinks
       - id: detect-private-key
       # - id: forbid-submodules in the next version
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.8.0.4
+    hooks:
+      - id: shellcheck
