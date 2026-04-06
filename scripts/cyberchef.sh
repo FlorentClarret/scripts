@@ -44,7 +44,7 @@ if [ "$(docker ps -aq -f status=exited -f name=cyberchef)" ]; then
 fi
 
 echo "==> Update the docker image"
-docker pull mpepping/cyberchef
+docker pull ghcr.io/gchq/cyberchef:latest
 
 echo "==> Run the container"
 docker run -d -p "$PORT:8000" --name cyberchef mpepping/cyberchef
