@@ -47,7 +47,7 @@ echo "==> Update the docker image"
 docker pull ghcr.io/gchq/cyberchef:latest
 
 echo "==> Run the container"
-docker run -d -p "$PORT:8000" --name cyberchef ghcr.io/gchq/cyberchef:latest
+docker run -d -p "$PORT:80" --name cyberchef ghcr.io/gchq/cyberchef:latest
 
 echo "==> Url : http://localhost:$PORT/"
 
